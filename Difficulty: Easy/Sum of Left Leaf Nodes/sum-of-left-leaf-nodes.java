@@ -13,10 +13,7 @@ class Node {
 class Solution {
     static int sum;
     public void traverse(Node root){
-        if(root==null){
-            return;
-        }
-        if(root.left==null && root.right==null){
+        if(root==null ||(root.left==null && root.right==null)){
             return;
         }
         if(root.left!=null && root.left.left==null && root.left.right==null){
